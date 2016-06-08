@@ -1,0 +1,6 @@
+export RELEASE="v3.4"
+export MIRROR="http://alpine.gliderlabs.com/alpine"
+export PACKAGES="alpine-baselayout,alpine-keys,apk-tools,libc-utils"
+export BUILD_OPTIONS=(-b -s -c -t UTC -r $RELEASE -m $MIRROR -p $PACKAGES)
+export TAGS=(justincormack/armhf-alpine:3.3 justincormack/armhf-alpine:latest)
+export PUSH_IMAGE="true"
